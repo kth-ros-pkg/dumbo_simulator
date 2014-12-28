@@ -1,0 +1,20 @@
+<package>
+ <name> dumbo_gazebo </name>
+  <version>0.1.0</version>
+  <description>
+    Components for running Dumbo in simulation in Gazebo.
+  </description>
+  <maintainer email="fevb@kth.se">Francisco Vina</maintainer>
+  <license>BSD</license>
+
+  <url>http://ros.org/wiki/dumbo_gazebo</url>
+  <author email="fevb@kth.se">Francisco Vina</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>dumbo_description</run_depend>  
+  <run_depend>dumbo_controller_config</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+
+
+</package>

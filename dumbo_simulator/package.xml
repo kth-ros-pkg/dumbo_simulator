@@ -1,0 +1,19 @@
+<package>
+  <name> dumbo_simulator </name>
+  <version>1.0.0</version>
+  <description>
+    Components for bringing up Dumbo in simulation.
+  </description>
+  <maintainer email="fevb@kth.se">Francisco Vina</maintainer>
+  <license>BSD</license>
+
+  <url>http://ros.org/wiki/dumbo_simulator</url>
+  <author>Francisco Vina</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <run_depend>dumbo_gazebo</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
