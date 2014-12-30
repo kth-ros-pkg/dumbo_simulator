@@ -1,26 +1,32 @@
-gazebo_pid_gains: &gazebo_pid_gains
+gazebo_arm_pid_gains: &gazebo_arm_pid_gains
   p: 5.0
+  i: 0.0
+  d: 0.0
+  i_clamp: 0.0
+
+gazebo_gripper_pid_gains: &gazebo_gripper_pid_gains
+  p: 1.0
   i: 0.0
   d: 0.0
   i_clamp: 0.0
 
 gazebo_ros_control:
   pid_gains:
-    left_arm_1_joint: *gazebo_pid_gains
-    left_arm_2_joint: *gazebo_pid_gains
-    left_arm_3_joint: *gazebo_pid_gains
-    left_arm_4_joint: *gazebo_pid_gains
-    left_arm_5_joint: *gazebo_pid_gains
-    left_arm_6_joint: *gazebo_pid_gains
-    left_arm_7_joint: *gazebo_pid_gains
+    left_arm_1_joint: *gazebo_arm_pid_gains
+    left_arm_2_joint: *gazebo_arm_pid_gains
+    left_arm_3_joint: *gazebo_arm_pid_gains
+    left_arm_4_joint: *gazebo_arm_pid_gains
+    left_arm_5_joint: *gazebo_arm_pid_gains
+    left_arm_6_joint: *gazebo_arm_pid_gains
+    left_arm_7_joint: *gazebo_arm_pid_gains
 
-    left_arm_top_finger_joint:    *gazebo_pid_gains
-    left_arm_bottom_finger_joint: *gazebo_pid_gains
+    left_arm_top_finger_joint:    *gazebo_gripper_pid_gains
+    left_arm_bottom_finger_joint: *gazebo_gripper_pid_gains
 
-    right_arm_1_joint: *gazebo_pid_gains
-    right_arm_2_joint: *gazebo_pid_gains
-    right_arm_3_joint: *gazebo_pid_gains
-    right_arm_4_joint: *gazebo_pid_gains
-    right_arm_5_joint: *gazebo_pid_gains
-    right_arm_6_joint: *gazebo_pid_gains
-    right_arm_7_joint: *gazebo_pid_gains
+    right_arm_1_joint: *gazebo_arm_pid_gains
+    right_arm_2_joint: *gazebo_arm_pid_gains
+    right_arm_3_joint: *gazebo_arm_pid_gains
+    right_arm_4_joint: *gazebo_arm_pid_gains
+    right_arm_5_joint: *gazebo_arm_pid_gains
+    right_arm_6_joint: *gazebo_arm_pid_gains
+    right_arm_7_joint: *gazebo_arm_pid_gains
